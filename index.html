@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: linear-gradient(to bottom, #87CEEB, #4682B4);
+            background-size: 100% 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+          }
+          
+          .container {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 20px;
+            text-align: center;
+            width: 350px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.8);
+          }
+          
+          h1 {
+            margin-bottom: 30px;
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+          }
+          
+          .input-container {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 30px;
+          }
+          
+          input[type="text"] {
+            width: 70%;
+            padding: 15px;
+            border-radius: 10px;
+            border: 1px solid #ccc;
+            font-size: 18px;
+          }
+          
+          button {
+            padding: 15px 30px;
+            background: #75a8df;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            margin-left: 10px;
+          }
+          
+          button:hover {
+            background-color: #074e9a;
+          }
+          
+          .weatherdetails {
+            margin-top: 30px;
+            font-size: 18px;
+            color: #666;
+          }
+          
+          .weatherdetails > div {
+            margin-bottom: 10px;
+          }
+          
+          .weatherdetails > div > span {
+            font-weight: bold;
+            margin-right: 10px;
+          }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Weather App</h1>
+        <div class="input-container">
+            <input type="text" id="cityinput" placeholder="Enter city name">
+            <button onclick="getweather()">Get Weather</button>
+        </div>
+        <div id="weather-details" class="weatherdetails"></div>
+        <!-- OUTPUT -->
+    </div>
+    <script src="weather.js"></script>
+</body>
+</html>
